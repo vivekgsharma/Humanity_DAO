@@ -6,7 +6,9 @@ import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 
 
-
+// I am extending all the class like ERC20 ,ERC20permit and ERC20Votes so that the code is clean
+// mytoken is inheriting all the contracts like ERC20 ,ERC20permit and ERC20Votes so that 
+// we can use all the funtions and properties of that class
 
 contract MyToken is ERC20, ERC20Permit, ERC20Votes {
     constructor() ERC20("Human", "HMN") ERC20Permit("MyToken") {}
